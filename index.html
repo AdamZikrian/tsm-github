@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Price List</title>
+    <style>
+      @font-face {
+        font-family: "MyCustomFont";
+        src: url("./fonts/kingred.otf") format("truetype");
+      }
+
+      .font-dafont {
+        font-family: "MyCustomFont", sans-serif;
+      }
+    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav
+        style="background-color: #f4f1e8"
+        class="fixed top-0 shadow-md inset-x-0 z-10 shadow-yellow-300"
+      >
+        <div class="flex flex-auto my-4 text-center">
+          <div class="hidden md:block my-4 mx-12 space-x-4">
+            <a
+              href="#"
+              style="color: #40493b"
+              class="hover:bg-white font-semibold px-1 py-1 rounded-xl"
+              >Home</a
+            >
+            <a
+              href="#"
+              style="color: #40493b"
+              class="hover:bg-white font-semibold px-1 py-1 rounded-xl"
+              >Portofolio</a
+            >
+            <a
+              href="#"
+              class="hover:bg-white font-semibold px-1 py-1 rounded-xl"
+              style="color: #40493b"
+              >Price List</a
+            ><a
+              href="#"
+              style="color: #40493b"
+              class="hover:bg-white font-semibold px-1 py-1 rounded-xl"
+              >About US</a
+            >
+            <a
+              href="#"
+              style="color: #40493b"
+              class="hover:bg-white font-semibold px-1 py-1 rounded-xl"
+              >T&C</a
+            >
+          </div>
+
+          <div class="md:hidden flex justify-end mx-12">
+            <button class="outline-none mobile-menu-button" id="toggleBtn">
+              <svg
+                style="color: #40493b"
+                class="w-6 h-6 hover:text-yellow-300"
+                x-show="!showMenu"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="hidden md:hidden mobile-menu" id="hiddenText">
+          <ul class="">
+            <li class="active">
+              <a
+                href="#"
+                style="color: #40493b"
+                class="block px-5 py-4 font-semibold hover:text-yellow-300 hover:bg-white"
+                >Home</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="#portofolio"
+                style="color: #40493b"
+                class="block px-5 py-4 font-semibold hover:text-yellow-300 hover:bg-white"
+                >Portofolio</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="#price"
+                style="color: #40493b"
+                class="block px-5 py-4 font-semibold hover:text-yellow-300 hover:bg-white"
+                >Price List</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                style="color: #40493b"
+                class="block px-5 py-4 font-semibold hover:text-yellow-300 hover:bg-white"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="#tc"
+                style="color: #40493b"
+                class="block px-5 py-4 font-semibold hover:text-yellow-300 hover:bg-white"
+                >T&C</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="relative" id="home">
+      <img class="w-full h-screen object-cover" />
+      <div
+        class="absolute inset-0 mt-5"
+        style="background-color: #f4f1e8"
+        class="w-full h-full"
+      >
+        <div style="color: #40493b" class="flex absolute w-full h-full">
+          <p class="text-5xl font-extrabold px-5 mt-24">thestorymoment</p>
+        </div>
+        <div style="color: #40493b" class="flex">
+          <p class="text-2xl px-5 mt-36">Wedding & Event Content Creator</p>
+          <p class="text-2xl px-5 mt-36">___________________________________</p>
+        </div>
+      </div>
+    </div>
+    <div class="relative" id="portofolio">
+      <img class="w-full h-screen object-cover" />
+      <div
+        class="absolute inset-0"
+        style="background-color: #f4f1e8"
+        class="w-full h-full"
+      ></div>
+    </div>
+    <div id="price" class="relative">
+      <img class="h-screen object-cover" />
+      <div class="absolute inset-0">
+        <div style="background-color: #f4f1e8" class="w-full h-full">
+          <div class="flex absolute w-full h-full justify-center">
+            <i class="text-4xl font-medium mt-48" style="color: #40493b"
+              >Price List</i
+            >
+          </div>
+          <div class="flex absolute w-full h-full justify-center">
+            <p class="text-6xl font-dafont mt-56" style="color: #40493b">
+              WEDDING
+            </p>
+          </div>
+          <div class="flex absolute w-full h-full justify-center">
+            <p class="text-5xl font-dafont mt-72" style="color: #40493b">
+              PACKAGE
+            </p>
+          </div>
+          <div
+            class="flex absolute w-full h-full justify-center items-center pt-24"
+          >
+            <img src="foto/IMG_2832.PNG" class="w-52 h-72 ml-auto" />
+            <img src="foto/IMG_2833.PNG" class="w-52 h-72 mx-auto" />
+          </div>
+          <div class="flex absolute w-full h-full items-center pt-80">
+            <a
+              href="#"
+              class="border-2 px-12 py-0.5 ml-auto mr-9 font-medium text-xs hover:bg-yellow-50 rounded-full"
+              style="border-color: black"
+              >Order Now</a
+            ><a
+              href="#"
+              class="border-2 px-12 py-0.5 mx-auto font-medium text-xs hover:bg-yellow-50 rounded-full"
+              style="border-color: black"
+              >Order Now</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="relative" id="about">
+      <img class="w-full h-screen object-cover" />
+      <div
+        class="absolute inset-0"
+        style="background-color: #f4f1e8"
+        class="w-full h-full"
+      ></div>
+    </div>
+    <div class="relative" id="tc">
+      <img class="w-full h-screen object-cover" />
+      <div
+        class="absolute inset-0"
+        style="background-color: #f4f1e8"
+        class="w-full h-full"
+      ></div>
+    </div>
+    <footer
+      class="fixed bottom-0 w-full inset-x-0 flex justify-center h-12"
+      style="background-color: #f4f1e8; color: #40493b"
+    >
+      <div class="flex items-center mx-20">
+        <img src="foto/ig.png" class="mx-1 w-5 h-5 md:w-6 md:h-6" />
+        <span class="text-4x1 font-medium md:text-base">thestory.moment</span>
+      </div>
+      <div class="flex items-center mx-20">
+        <img src="foto/wa.png" class="mx-1 w-5 h-5 md:w-6 md:h-6" />
+        <span class="text-4x1 font-medium md:text-base">087716625198</span>
+      </div>
+    </footer>
+
+    <script>
+      var toggleBtn = document.getElementById("toggleBtn");
+      var hiddenText = document.getElementById("hiddenText");
+      toggleBtn.addEventListener("click", function () {
+        if (hiddenText.classList.contains("hidden")) {
+          hiddenText.classList.remove("hidden");
+        } else {
+          hiddenText.classList.add("hidden");
+        }
+      });
+    </script>
+  </body>
+</html>
