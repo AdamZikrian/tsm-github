@@ -58,7 +58,7 @@
             >
           </div>
 
-          <div class="md:hidden flex justify-end mx-12">
+          <div class="md:hidden flex justify-end mx-6">
             <button class="outline-none mobile-menu-button" id="toggleBtn">
               <svg
                 style="color: #40493b"
@@ -241,6 +241,11 @@
         } else {
           hiddenText.classList.add("hidden");
         }
+      });
+      mobileMenu.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+        });
       });
     </script>
   </body>
