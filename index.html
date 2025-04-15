@@ -23,15 +23,20 @@
     <header>
       <nav
         style="background-color: #f4f1e8"
-        class="fixed top-0 shadow-md inset-x-0 z-10 shadow-yellow-300"
+        class="fixed top-0 shadow-md inset-x-0 z-10"
       >
-        <div class="flex flex-auto my-4 text-center">
+        <div class="flex flex-auto my-2 text-center">
           <div class="hidden md:block my-4 mx-12 space-x-4">
             <a
               href="#home"
               style="color: #40493b"
               class="hover:bg-white font-semibold px-1 py-1 rounded-xl"
               >Home</a
+            ><a
+              href="#about"
+              style="color: #40493b"
+              class="hover:bg-white font-semibold px-1 py-1 rounded-xl"
+              >About Us</a
             >
             <a
               href="#portofolio"
@@ -44,11 +49,6 @@
               class="hover:bg-white font-semibold px-1 py-1 rounded-xl"
               style="color: #40493b"
               >Price List</a
-            ><a
-              href="#about"
-              style="color: #40493b"
-              class="hover:bg-white font-semibold px-1 py-1 rounded-xl"
-              >About US</a
             >
             <a
               href="#tc"
@@ -78,21 +78,28 @@
         </div>
 
         <div class="hidden md:hidden mobile-menu" id="hiddenText">
-          <ul class="">
+          <ul class="my-2">
             <li class="active">
               <a
                 href="#"
                 style="color: #40493b"
-                class="block px-5 py-4 font-semibold hover:text-yellow-300 hover:bg-white"
+                class="block px-5 py-4 font-semibold hover:bg-white"
                 >Home</a
               >
             </li>
-
+            <li>
+              <a
+                href="#about"
+                style="color: #40493b"
+                class="block px-5 py-4 font-semibold hover:bg-white"
+                >About Us</a
+              >
+            </li>
             <li>
               <a
                 href="#portofolio"
                 style="color: #40493b"
-                class="block px-5 py-4 font-semibold hover:text-yellow-300 hover:bg-white"
+                class="block px-5 py-4 font-semibold hover:bg-white"
                 >Portofolio</a
               >
             </li>
@@ -101,23 +108,16 @@
               <a
                 href="#price"
                 style="color: #40493b"
-                class="block px-5 py-4 font-semibold hover:text-yellow-300 hover:bg-white"
+                class="block px-5 py-4 font-semibold hover:bg-white"
                 >Price List</a
               >
             </li>
-            <li>
-              <a
-                href="#about"
-                style="color: #40493b"
-                class="block px-5 py-4 font-semibold hover:text-yellow-300 hover:bg-white"
-                >About Us</a
-              >
-            </li>
+
             <li>
               <a
                 href="#tc"
                 style="color: #40493b"
-                class="block px-5 py-4 font-semibold hover:text-yellow-300 hover:bg-white"
+                class="block px-5 py-4 font-semibold hover:bg-white"
                 >T&C</a
               >
             </li>
@@ -137,7 +137,7 @@
           <p class="md:hidden text-4xl font-extrabold px-5 mt-12">
             thestorymoment
           </p>
-          <p class="hidden md:block text-5xl font-extrabold px-5 mt-24">
+          <p class="hidden md:block text-5xl font-extrabold px-5 mt-16">
             thestorymoment
           </p>
         </div>
@@ -145,52 +145,80 @@
           <p class="md:hidden text-sm px-5 mt-24">
             Wedding & Event Content Creator
           </p>
-          <p class="hidden md:block text-lg px-5 mt-36">
+          <p class="hidden md:block text-lg px-5 mt-28">
             Wedding & Event Content Creator
           </p>
           <p class="md:hidden text-xs mt-24">____________________</p>
-          <p class="hidden md:block text-xs mt-40">_____________________</p>
+          <p class="hidden md:block text-xs mt-28">
+            ____________________________
+          </p>
         </div>
       </div>
+    </div>
+    <div class="relative" id="tc">
+      <img class="w-full h-screen object-cover" />
+      <div
+        class="absolute inset-0"
+        style="background-color: #f4f1e8"
+        class="w-full h-full"
+      ></div>
     </div>
     <div class="relative" style="background-color: #f4f1e8" id="portofolio">
       <div class="ml-5 w-full pt-20">
         <i class="text-3xl font-bold" style="color: #40493b">Our</i>
         <p class="text-3xl font-dafont" style="color: #40493b">PORTOFOLIO</p>
       </div>
-      <div class="grid grid-cols-4 sm:grid-cols-5 lg:grid-cols-5 gap-5 p-4">
+      <div class="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-5 gap-5 p-4">
         <div class="aspect-w-16 aspect-h-9">
           <video class="w-full h-full rounded-xl" controls>
-            <source src="/video/vud2.mp4" type="video/mp4" />
+            <source src="/video/vid1.mp4" type="video/mp4" />
           </video>
         </div>
         <div class="aspect-w-16 aspect-h-9">
           <video class="w-full h-full rounded-xl" controls>
-            <source src="/video/vud2.mp4" type="video/mp4" />
+            <source src="/video/vid2.mp4" type="video/mp4" />
           </video>
         </div>
         <div class="aspect-w-16 aspect-h-9">
           <video class="w-full h-full rounded-xl" controls>
-            <source src="/video/vud2.mp4" type="video/mp4" />
+            <source src="/video/vid3.mp4" type="video/mp4" />
           </video>
         </div>
         <div class="aspect-w-16 aspect-h-9">
           <video class="w-full h-full rounded-xl" controls>
-            <source src="/video/vud2.mp4" type="video/mp4" />
+            <source src="/video/vid4.mp4" type="video/mp4" />
           </video>
         </div>
         <div class="aspect-w-16 aspect-h-9">
           <video class="w-full h-full rounded-xl" controls>
-            <source src="/video/vud2.mp4" type="video/mp4" />
+            <source src="/video/vid1.mp4" type="video/mp4" />
           </video>
         </div>
         <div class="aspect-w-16 aspect-h-9">
           <video class="w-full h-full rounded-xl" controls>
-            <source src="/video/vud2.mp4" type="video/mp4" />
+            <source src="/video/vid1.mp4" type="video/mp4" />
           </video>
         </div>
-
-        <!-- Lanjut sampai video 8... -->
+        <div class="aspect-w-16 aspect-h-9">
+          <video class="w-full h-full rounded-xl" controls>
+            <source src="/video/vid1.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="aspect-w-16 aspect-h-9">
+          <video class="w-full h-full rounded-xl" controls>
+            <source src="/video/vid1.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="aspect-w-16 aspect-h-9">
+          <video class="w-full h-full rounded-xl" controls>
+            <source src="/video/vid1.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="hidden md:block aspect-w-16 aspect-h-9">
+          <video class="w-full h-full rounded-xl" controls>
+            <source src="/video/vid1.mp4" type="video/mp4" />
+          </video>
+        </div>
       </div>
     </div>
 
@@ -229,19 +257,19 @@
           <div class="flex absolute w-full h-full justify-center pt-28 md:pt-3">
             <img
               src="foto/IMG_2832.PNG"
-              class="w-40 h-56 md:w-52 md:h-72 ml-auto"
+              class="w-40 h-56 md:w-60 md:h-80 ml-auto"
             />
             <img
               src="foto/IMG_2833.PNG"
-              class="w-40 h-56 md:w-52 md:h-72 mx-auto"
+              class="w-40 h-56 md:w-60 md:h-80 mx-auto"
             />
             <img
               src="foto/lamaran.png"
-              class="hidden md:block w-40 h-56 md:w-52 md:h-72 ml-auto"
+              class="hidden md:block w-40 h-56 md:w-60 md:h-80 ml-auto"
             />
             <img
               src="foto/siraman.png"
-              class="hidden md:block w-40 h-56 md:w-52 md:h-72 mx-auto"
+              class="hidden md:block w-40 h-56 md:w-60 md:h-80 mx-auto"
             />
           </div>
           <div class="flex absolute w-full items-center pt-72 mt-4">
@@ -259,7 +287,7 @@
               >Order Now</a
             >
           </div>
-          <div class="flex absolute w-full items-center pb-28 md:pt-64">
+          <div class="flex absolute w-full items-center md:pt-72">
             <a
               href="https://wa.me/6287819335209?text=FORM%20BOOKING%20THE%20STORY%20MOMENT%0A%0A1.%20Nama%3A%0A2.%20Hari%20%26%20Tanggal%20Acara%3A%0A3.%20Lokasi%20Acara%3A%0A4.%20Paket%20yang%20Dipilih%3A%0A5.%20Metode%20Pembayaran%3A%20(Pilih%20salah%20satu)%0A%E2%98%90%20Full%20Payment%0A%E2%98%90%20Down%20Payment%20(DP)%0A%0AKetentuan%3A%0A%E2%80%A2%20Booking%20dianggap%20resmi%20setelah%20pembayaran%20dikonfirmasi.%0A%E2%80%A2%20DP%20minimal%2050%25%20dan%20tidak%20bisa%20dikembalikan%20jika%20ada%20pembatalan%20dari%20pihak%20klien.%0A%E2%80%A2%20Pelunasan%20maksimal%20H-1%20sebelum%20acara%20berlangsung.%0A%0APembayaran%20dapat%20dilakukan%20melalui%3A%0A_*Mandiri*_%3A%0A310014611357%20a%2Fn%20Aginta%20Marsha%20Vania%0A%0ASetelah%20melakukan%20pembayaran%2C%20harap%20kirim%20bukti%20transfer%20via%20chat%2C%20terimakasih"
               target="_blank"
@@ -298,7 +326,7 @@
       ></div>
     </div>
     <footer
-      class="fixed bottom-0 w-full inset-x-0 flex justify-center h-10 md:h-12"
+      class="fixed bottom-0 w-full inset-x-0 flex justify-center h-6 md:h-12"
       style="background-color: #f4f1e8; color: #40493b"
     >
       <div class="flex items-center mx-1 md:mx-10">
