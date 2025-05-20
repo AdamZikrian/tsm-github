@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Price List</title>
+    <style>
+      @font-face {
+        font-family: "MyCustomFont";
+        src: url("./fonts/kingred.otf") format("truetype");
+      }
+
+      .font-dafont {
+        font-family: "MyCustomFont", sans-serif;
+      }
+    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav
+        style="background-color: #f4f1e8"
+        class="fixed top-0 shadow-md inset-x-0 z-20"
+      >
+        <div class="flex flex-auto my-2 text-center">
+          <div class="hidden md:block my-4 mx-12 space-x-4">
+            <a
+              href="#home"
+              style="color: #40493b"
+              class="hover:bg-white font-semibold px-1 py-1 rounded-xl"
+              >Home</a
+            ><a
+              href="#about"
+              style="color: #40493b"
+              class="hover:bg-white font-semibold px-1 py-1 rounded-xl"
+              >About Us</a
+            >
+            <a
+              href="#portofolio"
+              style="color: #40493b"
+              class="hover:bg-white font-semibold px-1 py-1 rounded-xl"
+              >Portofolio</a
+            >
+            <a
+              href="#price"
+              class="hover:bg-white font-semibold px-1 py-1 rounded-xl"
+              style="color: #40493b"
+              >Price List</a
+            >
+            <a
+              href="#tc"
+              style="color: #40493b"
+              class="hover:bg-white font-semibold px-1 py-1 rounded-xl"
+              >T&C</a
+            >
+          </div>
+
+          <div class="md:hidden flex justify-end mx-6">
+            <button class="outline-none mobile-menu-button" id="toggleBtn">
+              <svg
+                style="color: #40493b"
+                class="w-6 h-6 hover:text-yellow-300"
+                x-show="!showMenu"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="hidden md:hidden mobile-menu" id="hiddenText">
+          <ul class="my-2">
+            <li class="active">
+              <a
+                href="#"
+                style="color: #40493b"
+                class="block px-5 py-4 font-semibold hover:bg-white"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                style="color: #40493b"
+                class="block px-5 py-4 font-semibold hover:bg-white"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="#portofolio"
+                style="color: #40493b"
+                class="block px-5 py-4 font-semibold hover:bg-white"
+                >Portofolio</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="#price"
+                style="color: #40493b"
+                class="block px-5 py-4 font-semibold hover:bg-white"
+                >Price List</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="#tc"
+                style="color: #40493b"
+                class="block px-5 py-4 font-semibold hover:bg-white"
+                >T&C</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="relative" id="home">
+      <img class="w-full h-screen object-cover" />
+      <div
+        class="absolute inset-0 mt-5"
+        style="background-color: #f4f1e8"
+        class="w-full h-full"
+      >
+        <div style="color: #40493b" class="flex absolute w-full h-full">
+          <p class="md:hidden text-4xl font-extrabold px-5 mt-12">
+            thestorymoment
+          </p>
+          <p class="hidden md:block text-5xl font-extrabold px-5 mt-16">
+            thestorymoment
+          </p>
+        </div>
+        <div style="color: #40493b" class="flex">
+          <p class="md:hidden text-sm px-5 mt-24">
+            Wedding & Event Content Creator
+          </p>
+          <p class="hidden md:block text-lg px-5 mt-28">
+            Wedding & Event Content Creator
+          </p>
+          <p class="md:hidden text-xs mt-24">____________________</p>
+          <p class="hidden md:block text-xs mt-28">
+            ____________________________
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="relative" id="about">
+      <img class="w-full h-screen object-cover" />
+      <div
+        class="absolute inset-0"
+        style="background-color: #f4f1e8"
+        class="w-full h-full"
+      >
+        <div class="ml-5" style="color: #40493b">
+          <p class="text-5xl font-dafont pt-12 md:pt-20">ABOUT US</p>
+          <p class="text-xs font-medium">
+            "Every moment has a story. We are here to capture it"
+          </p>
+
+          <p
+            class="w-full break-words text-xs font-serif pt-5 pl-6 pr-8 md:text-lg md:pt-16"
+            style="word-spacing: 0.2rem"
+          >
+            The Story Moment adalah penyedia layanan dokumentasi wedding dan
+            event dengan konsep konten yang unik dan autentik. Kami berfokus
+            pada pengambilan video candid dengan pendekatan paparazzi-style,
+            yang memungkinkan kami untuk menangkap momen-momen spontan dan penuh
+            emosi tanpa gangguan atau intervensi. Dengan gaya ini, setiap tawa,
+            air mata, dan ekspresi tulus akan terekam dengan sempurna,
+            menciptakan kenangan yang terasa lebih nyata dan mendalam.
+          </p>
+          <p
+            class="w-full break-words text-xs font-serif pt-2 pl-6 pr-8 md:text-lg md:pt-8"
+            style="word-spacing: 0.2rem"
+          >
+            Keunggulan The Story Moment adalah kecepatan dalam memberikan hasil.
+            Semua konten yang diambil akan diupload secara real-time di sosial
+            media pribadi klien dan dikirimkan dalam waktu 24 jam (h+1 hari)
+            setelah acara selesai, sehingga klien dapat segera melihat dan
+            berbagi kenangan mereka tanpa harus menunggu lama. Dalam dunia yang
+            serba cepat seperti sekarang, kami memahami betapa pentingnya untuk
+            memiliki momen-momen berharga tersebut segera dapat dibagikan ke
+            media sosial atau dijadikan kenangan abadi.
+          </p>
+          <p
+            class="w-full break-words text-xs font-serif pt-2 pl-6 pr-8 md:text-lg md:pt-8"
+            style="word-spacing: 0.2rem"
+          >
+            Dengan pendekatan yang fleksibel dan layanan yang sangat
+            terpersonalisasi, The Story Moment siap membantu Anda menangkap
+            setiap detail acara dengan cara yang paling menggugah hati dan tanpa
+            cela. Setiap foto dan video yang kami hasilkan akan memberikan Anda
+            kenangan yang tidak hanya indah, tetapi juga penuh makna.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="relative" style="background-color: #f4f1e8" id="portofolio">
+      <div class="ml-5 w-full pt-20">
+        <i class="text-3xl font-bold" style="color: #40493b">Our</i>
+        <p class="text-3xl font-dafont" style="color: #40493b">PORTOFOLIO</p>
+      </div>
+      <div class="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-5 gap-5 p-4">
+        <div class="aspect-w-16 aspect-h-9">
+          <video class="w-full h-full rounded-xl" controls>
+            <source src="/video/vid1.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="aspect-w-16 aspect-h-9">
+          <video class="w-full h-full rounded-xl" controls>
+            <source src="/video/vid2.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="aspect-w-16 aspect-h-9">
+          <video class="w-full h-full rounded-xl" controls>
+            <source src="/video/vid3.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="aspect-w-16 aspect-h-9">
+          <video class="w-full h-full rounded-xl" controls>
+            <source src="/video/vid4.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="aspect-w-16 aspect-h-9">
+          <video class="w-full h-full rounded-xl" controls>
+            <source src="/video/vid5.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="aspect-w-16 aspect-h-9">
+          <video class="w-full h-full rounded-xl" controls poster="/foto/6.png">
+            <source src="/video/vid6.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="aspect-w-16 aspect-h-9">
+          <video class="w-full h-full rounded-xl" controls>
+            <source src="/video/vid7.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="aspect-w-16 aspect-h-9">
+          <video class="w-full h-full rounded-xl" controls>
+            <source src="/video/vid8.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="aspect-w-16 aspect-h-9">
+          <video class="w-full h-full rounded-xl" controls>
+            <source src="/video/vid1.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="hidden md:block aspect-w-16 aspect-h-9">
+          <video class="w-full h-full rounded-xl" controls>
+            <source src="/video/vid1.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <div id="price" class="relative">
+      <img class="h-screen object-cover" />
+      <div class="absolute inset-0">
+        <div style="background-color: #f4f1e8" class="w-full h-full">
+          <div class="absolute text-center w-full h-full md:mt-20">
+            <i class="md:hidden text-2xl font-medium" style="color: #40493b">
+              Price List
+            </i>
+            <p class="md:hidden text-4xl font-dafont" style="color: #40493b">
+              WEDDING
+            </p>
+            <p class="md:hidden text-3xl font-dafont" style="color: #40493b">
+              PACKAGE
+            </p>
+          </div>
+          <div class="grid grid-cols-2 text-center">
+            <div class="hidden md:block md:mt-32">
+              <i class="text-4xl font-medium" style="color: #40493b">
+                Price List
+              </i>
+              <p class="text-6xl font-dafont" style="color: #40493b">WEDDING</p>
+              <p class="text-5xl font-dafont" style="color: #40493b">PACKAGE</p>
+            </div>
+            <div class="hidden md:block md:mt-20">
+              <i class="text-4xl font-medium" style="color: #40493b">
+                Price List
+              </i>
+              <p class="text-6xl font-dafont" style="color: #40493b">BEFORE</p>
+              <p class="text-6xl font-dafont" style="color: #40493b">WEDDING</p>
+              <p class="text-5xl font-dafont" style="color: #40493b">PACKAGE</p>
+            </div>
+          </div>
+          <div class="flex absolute w-full h-full justify-center pt-28 md:pt-3">
+            <img
+              src="foto/full day.png"
+              class="w-40 h-56 md:w-60 md:h-80 ml-auto"
+            />
+            <img
+              src="foto/half day.png"
+              class="w-40 h-56 md:w-60 md:h-80 mx-auto"
+            />
+            <img
+              src="foto/lamaran.png"
+              class="hidden md:block w-40 h-56 md:w-60 md:h-80 ml-auto"
+            />
+            <img
+              src="foto/siraman.png"
+              class="hidden md:block w-40 h-56 md:w-60 md:h-80 mx-auto"
+            />
+          </div>
+          <div class="flex absolute w-full items-center pt-72 mt-4">
+            <a
+              href="https://wa.me/6287819335209?text=FORM%20BOOKING%20THE%20STORY%20MOMENT%0A%0A1.%20Nama%3A%0A2.%20No%20WA%3A%0A3.%20Hari%20%26%20Tanggal%20Acara%3A%0A4.%20Lokasi%20Acara%3A%0A5.%20Paket%20yang%20Dipilih%3A%0A6.%20Metode%20Pembayaran%3A%20(Pilih%20salah%20satu)%0A%E2%98%90%20Full%20Payment%0A%E2%98%90%20Down%20Payment%20(DP)%0A%0AKetentuan%3A%0A%E2%80%A2%20Booking%20dianggap%20resmi%20setelah%20pembayaran%20dikonfirmasi.%0A%E2%80%A2%20DP%20minimal%2050%25%20dan%20tidak%20bisa%20dikembalikan%20jika%20ada%20pembatalan%20dari%20pihak%20klien.%0A%E2%80%A2%20Pelunasan%20maksimal%20H-1%20sebelum%20acara%20berlangsung.%0A%0APembayaran%20dapat%20dilakukan%20melalui%3A%0A_*Mandiri*_%3A%0A310014611357%20a%2Fn%20Aginta%20Marsha%20Vania%0A%0ASetelah%20melakukan%20pembayaran%2C%20harap%20kirim%20bukti%20transfer%20via%20chat%2C%20terimakasih"
+              target="_blank"
+              class="md:hidden border-2 px-8 py-0.5 ml-auto mr-6 z-10 font-medium text-xs hover:bg-yellow-50 rounded-full"
+              style="border-color: black"
+              >Order Now</a
+            ><a
+              href="https://wa.me/6287819335209?text=FORM%20BOOKING%20THE%20STORY%20MOMENT%0A%0A1.%20Nama%3A%0A2.%20No%20WA%3A%0A3.%20Hari%20%26%20Tanggal%20Acara%3A%0A4.%20Lokasi%20Acara%3A%0A5.%20Paket%20yang%20Dipilih%3A%0A6.%20Metode%20Pembayaran%3A%20(Pilih%20salah%20satu)%0A%E2%98%90%20Full%20Payment%0A%E2%98%90%20Down%20Payment%20(DP)%0A%0AKetentuan%3A%0A%E2%80%A2%20Booking%20dianggap%20resmi%20setelah%20pembayaran%20dikonfirmasi.%0A%E2%80%A2%20DP%20minimal%2050%25%20dan%20tidak%20bisa%20dikembalikan%20jika%20ada%20pembatalan%20dari%20pihak%20klien.%0A%E2%80%A2%20Pelunasan%20maksimal%20H-1%20sebelum%20acara%20berlangsung.%0A%0APembayaran%20dapat%20dilakukan%20melalui%3A%0A_*Mandiri*_%3A%0A310014611357%20a%2Fn%20Aginta%20Marsha%20Vania%0A%0ASetelah%20melakukan%20pembayaran%2C%20harap%20kirim%20bukti%20transfer%20via%20chat%2C%20terimakasih"
+              target="_blank"
+              class="md:hidden border-2 px-8 py-0.5 mx-auto font-medium z-10 text-xs hover:bg-yellow-50 rounded-full"
+              style="border-color: black"
+              >Order Now</a
+            >
+          </div>
+          <div class="flex absolute w-full items-center md:pt-72">
+            <a
+              href="https://wa.me/6287819335209?text=FORM%20BOOKING%20THE%20STORY%20MOMENT%0A%0A1.%20Nama%3A%0A2.%20No%20WA%3A%0A3.%20Hari%20%26%20Tanggal%20Acara%3A%0A4.%20Lokasi%20Acara%3A%0A5.%20Paket%20yang%20Dipilih%3A%0A6.%20Metode%20Pembayaran%3A%20(Pilih%20salah%20satu)%0A%E2%98%90%20Full%20Payment%0A%E2%98%90%20Down%20Payment%20(DP)%0A%0AKetentuan%3A%0A%E2%80%A2%20Booking%20dianggap%20resmi%20setelah%20pembayaran%20dikonfirmasi.%0A%E2%80%A2%20DP%20minimal%2050%25%20dan%20tidak%20bisa%20dikembalikan%20jika%20ada%20pembatalan%20dari%20pihak%20klien.%0A%E2%80%A2%20Pelunasan%20maksimal%20H-1%20sebelum%20acara%20berlangsung.%0A%0APembayaran%20dapat%20dilakukan%20melalui%3A%0A_*Mandiri*_%3A%0A310014611357%20a%2Fn%20Aginta%20Marsha%20Vania%0A%0ASetelah%20melakukan%20pembayaran%2C%20harap%20kirim%20bukti%20transfer%20via%20chat%2C%20terimakasih"
+              target="_blank"
+              class="hidden md:block border-2 px-12 py-0.5 ml-auto z-10 mr-6 font-medium text-xs hover:bg-yellow-50 rounded-full"
+              style="border-color: black"
+              >Order Now</a
+            ><a
+              href="https://wa.me/6287819335209?text=FORM%20BOOKING%20THE%20STORY%20MOMENT%0A%0A1.%20Nama%3A%0A2.%20No%20WA%3A%0A3.%20Hari%20%26%20Tanggal%20Acara%3A%0A4.%20Lokasi%20Acara%3A%0A5.%20Paket%20yang%20Dipilih%3A%0A6.%20Metode%20Pembayaran%3A%20(Pilih%20salah%20satu)%0A%E2%98%90%20Full%20Payment%0A%E2%98%90%20Down%20Payment%20(DP)%0A%0AKetentuan%3A%0A%E2%80%A2%20Booking%20dianggap%20resmi%20setelah%20pembayaran%20dikonfirmasi.%0A%E2%80%A2%20DP%20minimal%2050%25%20dan%20tidak%20bisa%20dikembalikan%20jika%20ada%20pembatalan%20dari%20pihak%20klien.%0A%E2%80%A2%20Pelunasan%20maksimal%20H-1%20sebelum%20acara%20berlangsung.%0A%0APembayaran%20dapat%20dilakukan%20melalui%3A%0A_*Mandiri*_%3A%0A310014611357%20a%2Fn%20Aginta%20Marsha%20Vania%0A%0ASetelah%20melakukan%20pembayaran%2C%20harap%20kirim%20bukti%20transfer%20via%20chat%2C%20terimakasih"
+              target="_blank"
+              class="hidden md:block border-2 px-12 py-0.5 mx-auto z-10 font-medium text-xs hover:bg-yellow-50 rounded-full"
+              style="border-color: black"
+              >Order Now</a
+            ><a
+              href="https://wa.me/6287819335209?text=FORM%20BOOKING%20THE%20STORY%20MOMENT%0A%0A1.%20Nama%3A%0A2.%20No%20WA%3A%0A3.%20Hari%20%26%20Tanggal%20Acara%3A%0A4.%20Lokasi%20Acara%3A%0A5.%20Paket%20yang%20Dipilih%3A%0A6.%20Metode%20Pembayaran%3A%20(Pilih%20salah%20satu)%0A%E2%98%90%20Full%20Payment%0A%E2%98%90%20Down%20Payment%20(DP)%0A%0AKetentuan%3A%0A%E2%80%A2%20Booking%20dianggap%20resmi%20setelah%20pembayaran%20dikonfirmasi.%0A%E2%80%A2%20DP%20minimal%2050%25%20dan%20tidak%20bisa%20dikembalikan%20jika%20ada%20pembatalan%20dari%20pihak%20klien.%0A%E2%80%A2%20Pelunasan%20maksimal%20H-1%20sebelum%20acara%20berlangsung.%0A%0APembayaran%20dapat%20dilakukan%20melalui%3A%0A_*Mandiri*_%3A%0A310014611357%20a%2Fn%20Aginta%20Marsha%20Vania%0A%0ASetelah%20melakukan%20pembayaran%2C%20harap%20kirim%20bukti%20transfer%20via%20chat%2C%20terimakasih"
+              target="_blank"
+              class="hidden md:block border-2 px-12 py-0.5 ml-auto z-10 mr-6 font-medium text-xs hover:bg-yellow-50 rounded-full"
+              style="border-color: black"
+              >Order Now</a
+            ><a
+              href="https://wa.me/6287819335209?text=FORM%20BOOKING%20THE%20STORY%20MOMENT%0A%0A1.%20Nama%3A%0A2.%20No%20WA%3A%0A3.%20Hari%20%26%20Tanggal%20Acara%3A%0A4.%20Lokasi%20Acara%3A%0A5.%20Paket%20yang%20Dipilih%3A%0A6.%20Metode%20Pembayaran%3A%20(Pilih%20salah%20satu)%0A%E2%98%90%20Full%20Payment%0A%E2%98%90%20Down%20Payment%20(DP)%0A%0AKetentuan%3A%0A%E2%80%A2%20Booking%20dianggap%20resmi%20setelah%20pembayaran%20dikonfirmasi.%0A%E2%80%A2%20DP%20minimal%2050%25%20dan%20tidak%20bisa%20dikembalikan%20jika%20ada%20pembatalan%20dari%20pihak%20klien.%0A%E2%80%A2%20Pelunasan%20maksimal%20H-1%20sebelum%20acara%20berlangsung.%0A%0APembayaran%20dapat%20dilakukan%20melalui%3A%0A_*Mandiri*_%3A%0A310014611357%20a%2Fn%20Aginta%20Marsha%20Vania%0A%0ASetelah%20melakukan%20pembayaran%2C%20harap%20kirim%20bukti%20transfer%20via%20chat%2C%20terimakasih"
+              target="_blank"
+              class="hidden md:block border-2 px-12 py-0.5 mx-auto z-10 font-medium text-xs hover:bg-yellow-50 rounded-full"
+              style="border-color: black"
+              >Order Now</a
+            >
+          </div>
+          <div class="absolute text-center w-full h-full pt-80 mt-5">
+            <i class="md:hidden text-2xl font-medium" style="color: #40493b">
+              Price List
+            </i>
+            <p class="md:hidden text-4xl font-dafont" style="color: #40493b">
+              BEFORE
+            </p>
+            <p class="md:hidden text-4xl font-dafont" style="color: #40493b">
+              WEDDING
+            </p>
+            <p class="md:hidden text-3xl font-dafont" style="color: #40493b">
+              PACKAGE
+            </p>
+            <div class="flex absolute w-full h-full justify-center pt-1">
+              <img
+                src="foto/lamaran.png"
+                class="md:hidden w-40 h-56 md:w-60 md:h-80 ml-auto"
+              />
+              <img
+                src="foto/siraman.png"
+                class="md:hidden w-40 h-56 md:w-60 md:h-80 mx-auto"
+              />
+              <div class="flex absolute w-full items-center pt-44 mt-3">
+                <a
+                  href="https://wa.me/6287819335209?text=FORM%20BOOKING%20THE%20STORY%20MOMENT%0A%0A1.%20Nama%3A%0A2.%20No%20WA%3A%0A3.%20Hari%20%26%20Tanggal%20Acara%3A%0A4.%20Lokasi%20Acara%3A%0A5.%20Paket%20yang%20Dipilih%3A%0A6.%20Metode%20Pembayaran%3A%20(Pilih%20salah%20satu)%0A%E2%98%90%20Full%20Payment%0A%E2%98%90%20Down%20Payment%20(DP)%0A%0AKetentuan%3A%0A%E2%80%A2%20Booking%20dianggap%20resmi%20setelah%20pembayaran%20dikonfirmasi.%0A%E2%80%A2%20DP%20minimal%2050%25%20dan%20tidak%20bisa%20dikembalikan%20jika%20ada%20pembatalan%20dari%20pihak%20klien.%0A%E2%80%A2%20Pelunasan%20maksimal%20H-1%20sebelum%20acara%20berlangsung.%0A%0APembayaran%20dapat%20dilakukan%20melalui%3A%0A_*Mandiri*_%3A%0A310014611357%20a%2Fn%20Aginta%20Marsha%20Vania%0A%0ASetelah%20melakukan%20pembayaran%2C%20harap%20kirim%20bukti%20transfer%20via%20chat%2C%20terimakasih"
+                  target="_blank"
+                  class="md:hidden border-2 px-8 py-0.5 ml-auto mr-6 z-10 font-medium text-xs hover:bg-yellow-50 rounded-full"
+                  style="border-color: black"
+                  >Order Now</a
+                ><a
+                  href="https://wa.me/6287819335209?text=FORM%20BOOKING%20THE%20STORY%20MOMENT%0A%0A1.%20Nama%3A%0A2.%20No%20WA%3A%0A3.%20Hari%20%26%20Tanggal%20Acara%3A%0A4.%20Lokasi%20Acara%3A%0A5.%20Paket%20yang%20Dipilih%3A%0A6.%20Metode%20Pembayaran%3A%20(Pilih%20salah%20satu)%0A%E2%98%90%20Full%20Payment%0A%E2%98%90%20Down%20Payment%20(DP)%0A%0AKetentuan%3A%0A%E2%80%A2%20Booking%20dianggap%20resmi%20setelah%20pembayaran%20dikonfirmasi.%0A%E2%80%A2%20DP%20minimal%2050%25%20dan%20tidak%20bisa%20dikembalikan%20jika%20ada%20pembatalan%20dari%20pihak%20klien.%0A%E2%80%A2%20Pelunasan%20maksimal%20H-1%20sebelum%20acara%20berlangsung.%0A%0APembayaran%20dapat%20dilakukan%20melalui%3A%0A_*Mandiri*_%3A%0A310014611357%20a%2Fn%20Aginta%20Marsha%20Vania%0A%0ASetelah%20melakukan%20pembayaran%2C%20harap%20kirim%20bukti%20transfer%20via%20chat%2C%20terimakasih"
+                  target="_blank"
+                  class="md:hidden border-2 px-8 py-0.5 mx-auto z-10 font-medium text-xs hover:bg-yellow-50 rounded-full"
+                  style="border-color: black"
+                  >Order Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="relative">
+      <img class="h-screen object-cover" />
+      <div class="absolute inset-0">
+        <div style="background-color: #f4f1e8" class="w-full h-full">
+          <div class="absolute w-full h-full">
+            <div class="text-center md:hidden">
+              <i class="text-2xl font-medium" style="color: #40493b">
+                Price List
+              </i>
+              <p class="text-4xl font-dafont" style="color: #40493b">EVENT</p>
+              <p class="text-3xl font-dafont" style="color: #40493b">PACKAGE</p>
+            </div>
+            <div class="hidden md:block text-center">
+              <i class="text-4xl font-medium" style="color: #40493b">
+                Price List
+              </i>
+              <p class="text-6xl font-dafont" style="color: #40493b">EVENT</p>
+              <p class="text-5xl font-dafont" style="color: #40493b">PACKAGE</p>
+            </div>
+
+            <div
+              class="text-center flex absolute w-full h-full justify-center pt-1"
+            >
+              <img
+                src="foto/birthday.png"
+                class="w-40 h-56 md:w-60 md:h-80 ml-auto"
+              />
+              <img
+                src="foto/bridal.png"
+                class="w-40 h-56 md:w-60 md:h-80 mx-auto"
+              />
+
+              <div class="flex absolute w-full items-center pt-44 mt-3">
+                <a
+                  href="https://wa.me/6287819335209?text=FORM%20BOOKING%20THE%20STORY%20MOMENT%0A%0A1.%20Nama%3A%0A2.%20No%20WA%3A%0A3.%20Hari%20%26%20Tanggal%20Acara%3A%0A4.%20Lokasi%20Acara%3A%0A5.%20Paket%20yang%20Dipilih%3A%0A6.%20Metode%20Pembayaran%3A%20(Pilih%20salah%20satu)%0A%E2%98%90%20Full%20Payment%0A%E2%98%90%20Down%20Payment%20(DP)%0A%0AKetentuan%3A%0A%E2%80%A2%20Booking%20dianggap%20resmi%20setelah%20pembayaran%20dikonfirmasi.%0A%E2%80%A2%20DP%20minimal%2050%25%20dan%20tidak%20bisa%20dikembalikan%20jika%20ada%20pembatalan%20dari%20pihak%20klien.%0A%E2%80%A2%20Pelunasan%20maksimal%20H-1%20sebelum%20acara%20berlangsung.%0A%0APembayaran%20dapat%20dilakukan%20melalui%3A%0A_*Mandiri*_%3A%0A310014611357%20a%2Fn%20Aginta%20Marsha%20Vania%0A%0ASetelah%20melakukan%20pembayaran%2C%20harap%20kirim%20bukti%20transfer%20via%20chat%2C%20terimakasih"
+                  target="_blank"
+                  class="md:hidden border-2 px-8 py-0.5 ml-auto mr-6 z-10 font-medium text-xs hover:bg-yellow-50 rounded-full"
+                  style="border-color: black"
+                  >Order Now</a
+                ><a
+                  href="https://wa.me/6287819335209?text=FORM%20BOOKING%20THE%20STORY%20MOMENT%0A%0A1.%20Nama%3A%0A2.%20No%20WA%3A%0A3.%20Hari%20%26%20Tanggal%20Acara%3A%0A4.%20Lokasi%20Acara%3A%0A5.%20Paket%20yang%20Dipilih%3A%0A6.%20Metode%20Pembayaran%3A%20(Pilih%20salah%20satu)%0A%E2%98%90%20Full%20Payment%0A%E2%98%90%20Down%20Payment%20(DP)%0A%0AKetentuan%3A%0A%E2%80%A2%20Booking%20dianggap%20resmi%20setelah%20pembayaran%20dikonfirmasi.%0A%E2%80%A2%20DP%20minimal%2050%25%20dan%20tidak%20bisa%20dikembalikan%20jika%20ada%20pembatalan%20dari%20pihak%20klien.%0A%E2%80%A2%20Pelunasan%20maksimal%20H-1%20sebelum%20acara%20berlangsung.%0A%0APembayaran%20dapat%20dilakukan%20melalui%3A%0A_*Mandiri*_%3A%0A310014611357%20a%2Fn%20Aginta%20Marsha%20Vania%0A%0ASetelah%20melakukan%20pembayaran%2C%20harap%20kirim%20bukti%20transfer%20via%20chat%2C%20terimakasih"
+                  target="_blank"
+                  class="md:hidden border-2 px-8 py-0.5 mx-auto z-10 font-medium text-xs hover:bg-yellow-50 rounded-full"
+                  style="border-color: black"
+                  >Order Now</a
+                >
+              </div>
+              <div class="flex absolute w-full items-center pt-64 mt-5">
+                <a
+                  href="https://wa.me/6287819335209?text=FORM%20BOOKING%20THE%20STORY%20MOMENT%0A%0A1.%20Nama%3A%0A2.%20No%20WA%3A%0A3.%20Hari%20%26%20Tanggal%20Acara%3A%0A4.%20Lokasi%20Acara%3A%0A5.%20Paket%20yang%20Dipilih%3A%0A6.%20Metode%20Pembayaran%3A%20(Pilih%20salah%20satu)%0A%E2%98%90%20Full%20Payment%0A%E2%98%90%20Down%20Payment%20(DP)%0A%0AKetentuan%3A%0A%E2%80%A2%20Booking%20dianggap%20resmi%20setelah%20pembayaran%20dikonfirmasi.%0A%E2%80%A2%20DP%20minimal%2050%25%20dan%20tidak%20bisa%20dikembalikan%20jika%20ada%20pembatalan%20dari%20pihak%20klien.%0A%E2%80%A2%20Pelunasan%20maksimal%20H-1%20sebelum%20acara%20berlangsung.%0A%0APembayaran%20dapat%20dilakukan%20melalui%3A%0A_*Mandiri*_%3A%0A310014611357%20a%2Fn%20Aginta%20Marsha%20Vania%0A%0ASetelah%20melakukan%20pembayaran%2C%20harap%20kirim%20bukti%20transfer%20via%20chat%2C%20terimakasih"
+                  target="_blank"
+                  class="hidden md:block border-2 px-12 py-0.5 ml-auto z-10 mr-12 font-medium text-xs hover:bg-yellow-50 rounded-full"
+                  style="border-color: black"
+                  >Order Now</a
+                ><a
+                  href="https://wa.me/6287819335209?text=FORM%20BOOKING%20THE%20STORY%20MOMENT%0A%0A1.%20Nama%3A%0A2.%20No%20WA%3A%0A3.%20Hari%20%26%20Tanggal%20Acara%3A%0A4.%20Lokasi%20Acara%3A%0A5.%20Paket%20yang%20Dipilih%3A%0A6.%20Metode%20Pembayaran%3A%20(Pilih%20salah%20satu)%0A%E2%98%90%20Full%20Payment%0A%E2%98%90%20Down%20Payment%20(DP)%0A%0AKetentuan%3A%0A%E2%80%A2%20Booking%20dianggap%20resmi%20setelah%20pembayaran%20dikonfirmasi.%0A%E2%80%A2%20DP%20minimal%2050%25%20dan%20tidak%20bisa%20dikembalikan%20jika%20ada%20pembatalan%20dari%20pihak%20klien.%0A%E2%80%A2%20Pelunasan%20maksimal%20H-1%20sebelum%20acara%20berlangsung.%0A%0APembayaran%20dapat%20dilakukan%20melalui%3A%0A_*Mandiri*_%3A%0A310014611357%20a%2Fn%20Aginta%20Marsha%20Vania%0A%0ASetelah%20melakukan%20pembayaran%2C%20harap%20kirim%20bukti%20transfer%20via%20chat%2C%20terimakasih"
+                  target="_blank"
+                  class="hidden md:block border-2 px-12 py-0.5 mx-auto z-10 font-medium text-xs hover:bg-yellow-50 rounded-full"
+                  style="border-color: black"
+                  >Order Now</a
+                >
+              </div>
+            </div>
+            <div
+              class="absolute pl-4 pt-60 md:pl-32 md:pt-96"
+              style="color: #40493b"
+            >
+              <p class="text-xs font-light">-Shoot with Iphone</p>
+              <p class="text-xs font-light">
+                -Harga yang tertera sudah termasuk fee transport wilayah
+                Banjarmasin
+              </p>
+            </div>
+          </div>
+          <div class="absolute text-center w-full h-full pt-96 mt-5">
+            <i class="md:hidden text-2xl font-medium" style="color: #40493b">
+              Price List
+            </i>
+            <p class="md:hidden text-4xl font-dafont" style="color: #40493b">
+              ADDITIONAL
+            </p>
+            <div class="flex absolute w-full h-full justify-center pt-1">
+              <img src="foto/add.png" class="md:hidden w-80 h-48 mx-auto" />
+              <div class="flex absolute w-full items-center pt-32 mt-3">
+                <a
+                  href="https://wa.me/6287819335209?text=FORM%20BOOKING%20THE%20STORY%20MOMENT%0A%0A1.%20Nama%3A%0A2.%20No%20WA%3A%0A3.%20Hari%20%26%20Tanggal%20Acara%3A%0A4.%20Lokasi%20Acara%3A%0A5.%20Paket%20yang%20Dipilih%3A%0A6.%20Metode%20Pembayaran%3A%20(Pilih%20salah%20satu)%0A%E2%98%90%20Full%20Payment%0A%E2%98%90%20Down%20Payment%20(DP)%0A%0AKetentuan%3A%0A%E2%80%A2%20Booking%20dianggap%20resmi%20setelah%20pembayaran%20dikonfirmasi.%0A%E2%80%A2%20DP%20minimal%2050%25%20dan%20tidak%20bisa%20dikembalikan%20jika%20ada%20pembatalan%20dari%20pihak%20klien.%0A%E2%80%A2%20Pelunasan%20maksimal%20H-1%20sebelum%20acara%20berlangsung.%0A%0APembayaran%20dapat%20dilakukan%20melalui%3A%0A_*Mandiri*_%3A%0A310014611357%20a%2Fn%20Aginta%20Marsha%20Vania%0A%0ASetelah%20melakukan%20pembayaran%2C%20harap%20kirim%20bukti%20transfer%20via%20chat%2C%20terimakasih"
+                  target="_blank"
+                  class="md:hidden border-2 px-16 py-0.5 mx-auto font-medium text-xs hover:bg-yellow-50 rounded-full"
+                  style="border-color: black"
+                  >Order Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hidden md:block relative">
+      <img class="h-screen object-cover" />
+      <div class="absolute inset-0">
+        <div style="background-color: #f4f1e8" class="w-full h-full">
+          <div class="absolute text-center w-full h-full">
+            <i
+              class="hidden md:block text-4xl font-medium"
+              style="color: #40493b"
+            >
+              Price List
+            </i>
+            <p
+              class="hidden md:block text-6xl font-dafont"
+              style="color: #40493b"
+            >
+              ADDITIONAL
+            </p>
+          </div>
+          <img
+            src="foto/add.png"
+            class="hidden md:block w-96 h-80 mx-auto pt-32"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="relative" id="tc">
+      <img class="w-full h-screen object-cover" />
+      <div
+        class="absolute inset-0"
+        style="background-color: #f4f1e8"
+        class="w-full h-full"
+      >
+        <div class="ml-5" style="color: #40493b">
+          <p class="text-5xl font-dafont pt-12 md:pt-20">T & C</p>
+          <p class="text-xs font-medium pt-2">Terms and Conditions</p>
+
+          <p
+            class="w-full break-words text-sm font-serif pt-12 pl-6 pr-8 md:text-lg md:pt-16"
+            style="word-spacing: 0.3rem"
+          >
+            -DP (Down Payment) 50% dari harga paket yang dipilih.
+          </p>
+          <p
+            class="w-full break-words text-sm font-serif pt-2 pl-6 pr-8 md:text-lg md:pt-4"
+            style="word-spacing: 0.3rem"
+          >
+            -Pelunasan paling lambat dibayarkan H-3 Acara.
+          </p>
+          <p
+            class="w-full break-words text-sm font-serif pt-2 pl-6 pr-8 md:text-lg md:pt-4"
+            style="word-spacing: 0.3rem"
+          >
+            -Harga yang tertera pada pricelist sudah termasuk fee transport
+            wilayah Banjarmasin
+          </p>
+          <p
+            class="w-full break-words text-sm font-serif pt-2 pl-6 pr-8 md:text-lg md:pt-4"
+            style="word-spacing: 0.3rem"
+          >
+            -Wilayah diluar Banjarmasin bisa mengkonsultasikan fee transport
+            dengan pihak story moment
+          </p>
+          <p
+            class="w-full break-words text-sm font-serif pt-2 pl-6 pr-8 md:text-lg md:pt-4"
+            style="word-spacing: 0.3rem"
+          >
+            -Reshedule (perubahan tanggal) dapat dilakukan apabila masih
+            tersedia.
+          </p>
+          <p
+            class="w-full break-words text-sm font-serif pt-2 pl-6 pr-8 md:text-lg md:pt-4"
+            style="word-spacing: 0.3rem"
+          >
+            -Apabila acara dibatalkan (terjadi force majeur), pembayaran tidak
+            dapat dikembalikan.
+          </p>
+          <p
+            class="w-full break-words text-sm font-serif pt-2 pl-6 pr-8 md:text-lg md:pt-4"
+            style="word-spacing: 0.3rem"
+          >
+            -All files can be used for story moment portofolio.
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer
+      class="fixed bottom-0 w-full inset-x-0 z-20 flex justify-center h-6 md:h-12"
+      style="background-color: #f4f1e8; color: #40493b"
+    >
+      <div class="flex items-center mx-1 md:mx-10">
+        <img src="foto/ig.png" class="mx-1 w-4 h-4 md:w-6 md:h-6" />
+        <span class="font-medium">thestory.moment</span>
+      </div>
+      <div class="flex items-center mx-1 md:mx-10">
+        <img src="foto/wa.png" class="mx-1 w-4 h-4 md:w-6 md:h-6" />
+        <span class="font-medium">087819335209</span>
+      </div>
+    </footer>
+    <script>
+      var toggleBtn = document.getElementById("toggleBtn");
+      var hiddenText = document.getElementById("hiddenText");
+      toggleBtn.addEventListener("click", function () {
+        if (hiddenText.classList.contains("hidden")) {
+          hiddenText.classList.remove("hidden");
+        } else {
+          hiddenText.classList.add("hidden");
+        }
+      });
+      mobileMenu.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+        });
+      });
+    </script>
+  </body>
+</html>
